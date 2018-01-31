@@ -33,8 +33,11 @@ for f in os.listdir(path_load):
 	photo = f
 	row = Image.open(os.path.join(path_load, photo))
 	width_r, height_r = row.size
-	new_width_r = int(width_r / 6)
-	new_height_r = int(height_r / 6)
+
+	decrease_value = 6 # how much the image should be shrinked
+
+	new_width_r = int(width_r / decrease_value)
+	new_height_r = int(height_r / decrease_value)
 
 	row = row.resize((new_width_r, new_height_r), Image.ANTIALIAS)
 	row = ImageTk.PhotoImage(row)
