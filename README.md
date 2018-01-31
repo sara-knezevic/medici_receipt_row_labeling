@@ -1,4 +1,4 @@
-path_load -> Where the images of rows are stored. \n
+path_load -> Where the images of rows are stored.  
 path_saved -> Where the program moves and saves labelled objects.
 
 For linux:
